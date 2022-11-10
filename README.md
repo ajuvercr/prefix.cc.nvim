@@ -1,18 +1,13 @@
 # Lookup prefix.cc
 
-Simple nvim plugin that looks up the hightlighted prefix.
+Simple nvim plugin that looks up the highlighted prefix.
 
 When the last argument is truthy, the prefix is changed to `@prefix {short}: <{prefix}>.`. 
 
 
 Usage:
 ```
-require"prefix-cc".lookup("foaf", true)
-```
-
-Or as nvim command:
-```
-:luado return require"prefix-cc".lookup(line, true)
+:lua require"prefix-cc".lookup(true)
 ```
 
 
